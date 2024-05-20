@@ -2,10 +2,10 @@
 This is how to link your git count for the first time
 
 1. Check for Existing SSH key
-   '''
-   ls ~/.ssh
-   '''
-   Look for files named id_rsa and id_rsa.pub or similar. If you don't have these, you'll need to generate a new SSH key.
+'''
+ls ~/.ssh
+'''
+Look for files named id_rsa and id_rsa.pub or similar. If you don't have these, you'll need to generate a new SSH key.
 2. generate a new SSH Key
 
 '''
