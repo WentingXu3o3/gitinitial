@@ -1,5 +1,5 @@
 # gitinitial
-This is how to link your git count for the first time
+This is how to link your github account for the first time
 
 1. Check for Existing SSH key
 ```
