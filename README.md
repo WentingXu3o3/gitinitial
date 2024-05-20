@@ -33,8 +33,9 @@ And you will see 'Hi xxx! You've successfully authenticated, but GitHub does not
 ```
 git init
 ```
+and
 ```
 git clone git@github.com:xxx
 ```
-and
+
 
