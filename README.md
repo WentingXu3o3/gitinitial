@@ -33,6 +33,7 @@ cat ~/.ssh/id_rsa.pub
 ssh -T git@github.com
 ```
 And you will see 'Hi xxx! You've successfully authenticated, but GitHub does not provide shell access.
+
 7.Clone the Repository Again:
 if you want init it.
 ```
