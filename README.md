@@ -15,13 +15,14 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
    
 "your_email@example.com" change it to your github account 
-
+You can not to set a passphrase. enter to pass
+If succed, you will see a interesting image figure
 3.Start the SSH Agent and Add Your Key:
 ```
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 ```
-You can not to set a passphrase. enter to pass
+
 4.Add the SSH Key to Your GitHub Account:
 ```
 cat ~/.ssh/id_rsa.pub
