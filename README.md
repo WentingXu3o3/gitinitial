@@ -17,6 +17,22 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 "your_email@example.com" change it to your github account 
 You can not to set a passphrase. enter to pass
 If succed, you will see a interesting image figure
+
+if failed, probably becuase your ssh is not in chmod 700 mode.
+so
+```
+chmod 700 ~/.ssh
+```
+if still failed, then move right now .ssh and build a new one
+```
+mv ~/.ssh ~/.ssh_copy
+```
+```
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+```
+and then repeat the step 2. 
+
 3.Start the SSH Agent and Add Your Key:
 ```
 eval "$(ssh-agent -s)"
@@ -35,11 +51,7 @@ ssh -T git@github.com
 And you will see 'Hi xxx! You've successfully authenticated, but GitHub does not provide shell access.
 
 7.Clone the Repository Again:
-if you want init it.
-```
-git init
-```
-and try to clone
+
 ```
 git clone git@github.com:xxx
 ```
