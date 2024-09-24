@@ -44,13 +44,20 @@ ssh-add ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub
 ```
 5.Go to YOUR GitHub and find your account SSH settings, Click New SSH key, provide a title, and paste your key into the "Key" field.
+
 6.Test the SSH Connection:
 ```
 ssh -T git@github.com
 ```
 And you will see 'Hi xxx! You've successfully authenticated, but GitHub does not provide shell access.
 
-7.Clone the Repository Again:
+7. if failed, do below again
+```
+chmod 600 ~/.ssh/config
+chmod 700 ~/.ssh
+```
+
+8.Clone the Repository Again:
 
 ```
 git clone git@github.com:xxx
