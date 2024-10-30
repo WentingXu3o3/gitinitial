@@ -55,6 +55,7 @@ And you will see 'Hi xxx! You've successfully authenticated, but GitHub does not
 ```
 chmod 600 ~/.ssh/config
 chmod 700 ~/.ssh
+sudo chown yourusername:yourusername ~/.ssh/id_rsa
 ```
 
 8.Clone the Repository Again:
